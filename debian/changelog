@@ -1,3 +1,9 @@
+zsnapd (0.8.11g-1) unstable; urgency=medium
+
+  * Fix receive_mountpoint bug when append_name set
+
+ -- Matthew Grant <matt@mattgrant.net.nz>  Sat, 07 Mar 2020 17:06:05 +1300
+
 zsnapd (0.8.11f-1) unstable; urgency=medium
 
   * Update README.md for trigger imporvements and receive mountpoint work.
