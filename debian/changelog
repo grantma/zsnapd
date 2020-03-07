@@ -1,3 +1,9 @@
+zsnapd (0.8.11h-1) unstable; urgency=medium
+
+  * Fix /proc/mounts reading bug with multiple mnts
+
+ -- Matthew Grant <matt@mattgrant.net.nz>  Sat, 07 Mar 2020 17:30:04 +1300
+
 zsnapd (0.8.11g-1) unstable; urgency=medium
 
   * Fix receive_mountpoint bug when append_name set
