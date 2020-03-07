@@ -517,7 +517,8 @@ class Config(object):
                         append_name = dataset[dataset.find('/'):]
                     if (append_basename and dataset.rfind('/') != -1):
                         append_name = dataset[dataset.rfind('/'):]
-                    receive_mountpoint = str(receive_mountpoint) + append_name
+                    if (receive_mountpoint):
+                        receive_mountpoint = str(receive_mountpoint) + append_name
                     target = ds_config.get(dataset, 'replicate_target', fallback=None)
                     if target:
                         target += append_name
@@ -568,7 +569,8 @@ class Config(object):
                         append_name = dataset[dataset.find('/'):]
                     if (append_basename and dataset.rfind('/') != -1):
                         append_name = dataset[dataset.rfind('/'):]
-                    receive_mountpoint = str(receive_mountpoint) + append_name
+                    if (receive_mountpoint):
+                        receive_mountpoint = str(receive_mountpoint) + append_name
                     target = ds_config.get(dataset, 'replicate2_target', fallback=None)
                     if target:
                         target += append_name
