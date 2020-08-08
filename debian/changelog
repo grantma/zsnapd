@@ -1,3 +1,9 @@
+zsnapd (0.8.11h-2) unstable; urgency=medium
+
+  * Fix dependencies for Debian Python 2 removal. (Closes: #943302)
+
+ -- Matthew Grant <matt@mattgrant.net.nz>  Sat, 08 Aug 2020 16:05:12 +1200
+
 zsnapd (0.8.11h-1) unstable; urgency=medium
 
   * Fix /proc/mounts reading bug with multiple mnts
