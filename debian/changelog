@@ -1,9 +1,9 @@
-zsnapd (0.8.11h-2) unstable; urgency=medium
+zsnapd (0.8.11h-3) unstable; urgency=medium
 
   * Really fix bug about being in wrong section. (Closes: #943302)
   * Source only upload. (Closes: #919595)
 
- -- Matthew Grant <matt@mattgrant.net.nz>  Wed, 23 Sep 2020 10:53:38 +1200
+ -- Matthew Grant <matt@mattgrant.net.nz>  Wed, 23 Sep 2020 10:58:27 +1200
 
 zsnapd (0.8.11h-2) unstable; urgency=medium
 
