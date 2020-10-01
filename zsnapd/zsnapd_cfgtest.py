@@ -19,16 +19,41 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
-"""Stub file for zsnapd-cfgtest.
+import os
+import sys
 
-File system location of this file determines the first entry on sys.path, thus
-its placement, and symlinks from /usr/local/sbin.
-"""
+# A bit of nice stuff to set up ps output as much as we can...
+try:
+    from setproctitle import getproctitle
+    setproctitle_support = True
+except ImportError:
+    setproctitle_support = False
 
-from scripts.zsnapd_cfgtest import ZsnapdCfgtestProcess
+from magcode.core.process import Process
+from magcode.core.globals_ import *
+# import this to set up config file settings etc
+import zsnapd.globals_
+from zsnapd.manager import Manager
+from zsnapd.config import Config
 
-# Do the business
-process = ZsnapdCfgtestProcess()
-process.main()
+USAGE_MESSAGE = "Usage: %s [-hv] [-c config_file]"
+COMMAND_DESCRIPTION = "ZFS Snap Managment Daemon configuration tester"
 
 
+class ZsnapdCfgtestProcess(Process):
+
+    def __init__(self, *args, **kwargs):
+        """
+        Clean up command line argument list
+        """
+        super().__init__(usage_message=USAGE_MESSAGE,
+            command_description=COMMAND_DESCRIPTION, *args, **kwargs)
+
+    def main_process(self):
+        """
+        zsnapd-cfgtest main process
+        """
+        # Test configuration
+        ds_settings = Config.read_ds_config()
+        sys.exit(os.EX_OK)
+   

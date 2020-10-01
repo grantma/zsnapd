@@ -19,16 +19,16 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # THE SOFTWARE.
 
-"""Stub file for zfssnapd daemon.
+"""Stub file for zsnapd-cfgtest.
 
 File system location of this file determines the first entry on sys.path, thus
 its placement, and symlinks from /usr/local/sbin.
 """
 
-from scripts.zsnapd import ZsnapdProcess
+from zsnapd.zsnapd_cfgtest import ZsnapdCfgtestProcess
 
 # Do the business
-process = ZsnapdProcess()
+process = ZsnapdCfgtestProcess()
 process.main()
 
 

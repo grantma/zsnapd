@@ -39,7 +39,7 @@ from magcode.core.process import BooleanCmdLineArg
 from magcode.core.process import Process
 from magcode.core.globals_ import *
 # import this to set up config file settings etc
-import scripts.globals_rcmd
+import zsnapd.globals_rcmd
 
 USAGE_MESSAGE = "Usage: %s [-htv] [-c config_file]"
 COMMAND_DESCRIPTION = "ZFS Snap Daemon remote command shell for sshd"

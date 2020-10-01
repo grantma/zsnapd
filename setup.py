@@ -28,5 +28,6 @@ setup(name='zsnapd',
     author='Matthew Grant',
     author_email='matt@mattgrant.net.nz',
     url='http://mattgrant.net.nz/software/zsnapd',
-    packages=['zsnapd',])
+    packages=['zsnapd',],
+    scripts=['bin/zsnapd', 'bin/zsnapd-cfgtest', 'bin/zsnapd-rcmd','bin/zsnapd-trigger'])
 

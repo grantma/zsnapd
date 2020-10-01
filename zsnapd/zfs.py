@@ -32,10 +32,10 @@ from magcode.core.globals_ import log_info
 from magcode.core.globals_ import log_error
 from magcode.core.globals_ import debug_verbose
 
-from scripts.globals_ import SNAPSHOTNAME_REGEX
-from scripts.globals_ import SNAPSHOTNAME_FMTSPEC
-from scripts.globals_ import DEFAULT_BUFFER_SIZE
-from scripts.helper import Helper
+from zsnapd.globals_ import SNAPSHOTNAME_REGEX
+from zsnapd.globals_ import SNAPSHOTNAME_FMTSPEC
+from zsnapd.globals_ import DEFAULT_BUFFER_SIZE
+from zsnapd.helper import Helper
 
 
 class ZFS(object):

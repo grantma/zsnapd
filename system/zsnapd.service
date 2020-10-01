@@ -5,7 +5,7 @@ Description=ZFS Snapshot Daemon
 Type=simple
 User=root
 Group=root
-ExecStart=/usr/share/zsnapd/zsnapd --systemd
+ExecStart=/usr/bin/zsnapd --systemd
 ExecReload=/bin/kill -HUP $MAINPID
 
 [Install]

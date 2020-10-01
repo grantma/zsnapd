@@ -44,9 +44,9 @@ from magcode.core.globals_ import *
 from magcode.core.utility import get_numeric_setting
 from magcode.core.utility import get_boolean_setting
 # import this to set up config file settings etc
-import scripts.globals_
-from scripts.manager import Manager
-from scripts.config import Config
+import zsnapd.globals_
+from zsnapd.manager import Manager
+from zsnapd.config import Config
 
 USAGE_MESSAGE = "Usage: %s [-dhv] [-c config_file]"
 COMMAND_DESCRIPTION = "ZFS Snap Managment Daemon"

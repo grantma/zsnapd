@@ -25,10 +25,10 @@ File system location of this file determines the first entry on sys.path, thus
 its placement, and symlinks from /usr/local/sbin.
 """
 
-from scripts.zsnapd_rcmd import ZsnapdRCmdProcess
+from zsnapd.zsnapd_trigger import ZsnapdTriggerProcess
 
 # Do the business
-process = ZsnapdRCmdProcess()
+process = ZsnapdTriggerProcess()
 process.main()
 
 
