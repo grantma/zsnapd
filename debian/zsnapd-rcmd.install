@@ -1,4 +1,4 @@
-scripts/globals_rcmd.py	/usr/share/zsnapd/scripts
-scripts/zsnapd_rcmd.py	/usr/share/zsnapd/scripts
+zsnap/globals_rcmd.py	/usr/share/zsnapd/zsnap
+zsnap/zsnapd_rcmd.py	/usr/share/zsnapd/zsnap
 zsnapd-rcmd		/usr/share/zsnapd
 etc/zsnapd/zsnapd-rcmd.conf	/etc/zsnapd

@@ -8,6 +8,8 @@ __pycache__/
 pkg/*
 src/*
 packages/*
+build/*
+.pybuild/*
 <<<<<<< HEAD
 # Stuff in debian we should not worry about
 /debian/zsnapd/

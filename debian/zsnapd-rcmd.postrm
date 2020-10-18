@@ -22,7 +22,13 @@ set -e
 case "$1" in
         remove)
                 # Clean up stragglers, Slave include, log dirs etc
-                rm -rf /usr/share/zsnapd/scripts/__pycache__
+		for D in /usr/share/zsnapd/scripts /usr/share/zsnapd/zsnap; do
+			if [ ! -d ${D}/__pycache__ ]; then
+				continue
+			fi
+                	rm -rf ${D}/__pycache__
+		done
+		unset D
 	;;
         purge|upgrade|failed-upgrade|abort-install|abort-upgrade|disappear)
         ;;
