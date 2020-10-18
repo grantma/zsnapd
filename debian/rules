@@ -14,9 +14,6 @@ export DH_OPTIONS
 override_dh_python3:
 	/bin/true
 
-override_dh_build:
-	/bin/true
-
 override_dh_auto_build:
 	/bin/true
 
