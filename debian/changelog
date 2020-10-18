@@ -1,3 +1,11 @@
+zsnapd (0.8.11h-4~1.gbp6947f4) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @6947f473e83adb9ba8cd19d56db19c13b10af63f **
+
+  * UNRELEASED
+
+ -- Matthew Grant <matt@mattgrant.net.nz>  Sun, 18 Oct 2020 19:42:03 +1300
+
 zsnapd (0.8.11h-3) unstable; urgency=medium
 
   * Really fix bug about being in wrong section. (Closes: #943302)
