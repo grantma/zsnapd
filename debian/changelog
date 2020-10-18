@@ -1,10 +1,10 @@
-zsnapd (0.8.12-1~1.gbp6947f4) UNRELEASED; urgency=medium
+zsnapd (0.8.12-1) unstable; urgency=medium
 
-  ** SNAPSHOT build @6947f473e83adb9ba8cd19d56db19c13b10af63f **
+  * Use pybuild instead of pyversions (Closes: #972209, #943302)
+  * Redo dir structure and setup.py - setup tools work
+  * Bump version to 0.8.12
 
-  * UNRELEASED
-
- -- Matthew Grant <matt@mattgrant.net.nz>  Sun, 18 Oct 2020 19:42:03 +1300
+ -- Matthew Grant <matt@mattgrant.net.nz>  Mon, 19 Oct 2020 11:52:09 +1300
 
 zsnapd (0.8.11h-3) unstable; urgency=medium
 
