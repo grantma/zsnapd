@@ -25,7 +25,7 @@ File system location of this file determines the first entry on sys.path, thus
 its placement, and symlinks from /usr/local/sbin.
 """
 
-from scripts.zsnapd import ZsnapdProcess
+from zsnap.zsnapd import ZsnapdProcess
 
 # Do the business
 process = ZsnapdProcess()

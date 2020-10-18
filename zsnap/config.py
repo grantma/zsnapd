@@ -37,10 +37,10 @@ from magcode.core.globals_ import *
 from magcode.core.utility import MagCodeConfigError
 from magcode.core.utility import get_numeric_setting
 
-from scripts.globals_ import CLEANER_REGEX
-from scripts.globals_ import DEFAULT_BUFFER_SIZE
-from scripts.globals_ import TRIGGER_FILENAME
-from scripts.zfs import ZFS
+from zsnap.globals_ import CLEANER_REGEX
+from zsnap.globals_ import DEFAULT_BUFFER_SIZE
+from zsnap.globals_ import TRIGGER_FILENAME
+from zsnap.zfs import ZFS
 
 TEMPLATE_KEY = r'{template}'
 TRIGGER_STR = r'trigger'

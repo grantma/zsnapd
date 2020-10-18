@@ -34,12 +34,12 @@ from magcode.core.globals_ import *
 from magcode.core.utility import connect_test_address
 from magcode.core.utility import get_numeric_setting
 
-from scripts.zfs import ZFS
-from scripts.clean import Cleaner
-from scripts.helper import Helper
-from scripts.globals_ import SNAPSHOTNAME_FMTSPEC
-from scripts.globals_ import SNAPSHOTNAME_REGEX
-from scripts.globals_ import TRIGGER_FILENAME
+from zsnap.zfs import ZFS
+from zsnap.clean import Cleaner
+from zsnap.helper import Helper
+from zsnap.globals_ import SNAPSHOTNAME_FMTSPEC
+from zsnap.globals_ import SNAPSHOTNAME_REGEX
+from zsnap.globals_ import TRIGGER_FILENAME
 
 PROC_FAILURE = 0
 PROC_EXECUTED = 1

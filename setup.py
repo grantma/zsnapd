@@ -23,10 +23,12 @@
 from distutils.core import setup
 
 setup(name='zsnapd',
-    version='0.8.9a',
+    version='0.8.12',
     description='ZFS Snapshot Daemon',
     author='Matthew Grant',
     author_email='matt@mattgrant.net.nz',
     url='http://mattgrant.net.nz/software/zsnapd',
-    packages=['zsnapd',])
+    packages=['zsnap',],
+    scripts=['zsnapd', 'zsnapd-cfgtest',  'zsnapd-rcmd',  'zsnapd-trigger',],
+    )
 

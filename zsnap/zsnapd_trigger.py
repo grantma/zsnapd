@@ -33,9 +33,9 @@ from magcode.core.process import Process
 from magcode.core.process import BooleanCmdLineArg
 from magcode.core.globals_ import *
 # import this to set up config file settings etc
-import scripts.globals_
-from scripts.manager import Manager
-from scripts.config import Config
+import zsnap.globals_
+from zsnap.manager import Manager
+from zsnap.config import Config
 
 USAGE_MESSAGE = "Usage: %s [-hrv] [-c config_file] [mnt-point-or-dataset, mnt-point-or-dataset, ...]"
 COMMAND_DESCRIPTION = "ZFS Snap Daemon trigger utility"

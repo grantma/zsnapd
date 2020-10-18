@@ -32,9 +32,9 @@ from magcode.core.globals_ import log_info
 from magcode.core.globals_ import log_debug
 from magcode.core.globals_ import log_error
 
-from scripts.zfs import ZFS
-from scripts.globals_ import CLEANER_REGEX
-from scripts.globals_ import SNAPSHOTNAME_REGEX
+from zsnap.zfs import ZFS
+from zsnap.globals_ import CLEANER_REGEX
+from zsnap.globals_ import SNAPSHOTNAME_REGEX
 
 class Cleaner(object):
     """
