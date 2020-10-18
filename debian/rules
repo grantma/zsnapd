@@ -3,7 +3,7 @@
 # output every command that modifies files on the build system.
 #export DH_VERBOSE = 1
 
-export PYBUILD_NAME=zsnapd
+export PYBUILD_NAME=zsnap
 
 # This has to be exported to make some magic below work.
 export DH_OPTIONS
