@@ -113,7 +113,7 @@ class ZsnapdProcess(ProcessDaemon):
         log_info('Exited main loop - process terminating normally.')
         sys.exit(os.EX_OK)
 
-if (__name__ is "__main__"):
+if (__name__ == "__main__"):
     exit_code = ZsnapdProcess(sys.argv, len(sys.argv))
     sys.exit(exit_code)
 
