@@ -1,3 +1,9 @@
+zsnapd (0.8.12a-1) unstable; urgency=medium
+
+  * Fix warning with use of is against a string
+
+ -- Matthew Grant <matt@mattgrant.net.nz>  Wed, 15 Dec 2021 20:48:26 +1300
+
 zsnapd (0.8.12-1) unstable; urgency=medium
 
   * Use pybuild instead of pyversions (Closes: #972209, #943302)
