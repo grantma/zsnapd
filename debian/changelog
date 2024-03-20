@@ -1,3 +1,11 @@
+zsnapd (0.8.13-1) unstable; urgency=medium
+
+  * Dataset in ALL remote cmds, tighten rcmd filter
+  * Add regex_dataset setting to zsnapd-rcmd
+  * New upstream release 0.8.13
+
+ -- Matthew Grant <matt@mattgrant.net.nz>  Thu, 21 Mar 2024 11:45:38 +1300
+
 zsnapd (0.8.12a-1) unstable; urgency=medium
 
   * Fix warning with use of is against a string
