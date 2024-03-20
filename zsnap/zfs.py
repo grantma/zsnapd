@@ -95,15 +95,16 @@ class ZFS(object):
         return snapshots
 
     @staticmethod
-    def get_datasets(endpoint='', log_command=False):
+    def get_datasets(endpoint='', dataset='', log_command=False):
         """
         Retreives all datasets
         """
-        if endpoint == '':
-            command = 'zfs list -pH -o name,mountpoint'
-        else:
-            command = "{0} 'zfs list -pH -o name,mountpoint'"
-        output = Helper.run_command(command.format(endpoint), '/', log_command=log_command)
+        command = 'zfs list -pH -o name,mountpoint'
+        if dataset:
+            command = command + ' {1}'
+        if endpoint:
+            command = '{0} \'' + command + '\''
+        output = Helper.run_command(command.format(endpoint, dataset), '/', log_command=log_command)
         datasets = {}
         for line in filter(len, output.split('\n')):
             parts = list(filter(len, line.split('\t')))

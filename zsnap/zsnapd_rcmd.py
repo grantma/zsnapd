@@ -58,6 +58,38 @@ class TestingCmdLineArg(BooleanCmdLineArg):
                             settings_default_value = False,
                             settings_set_value = True)
 
+class RegexDatasetCmdLineArg(BaseCmdLineArg):
+    """
+    Process dataset regex command line setting
+    """
+    def __init__(self):
+        BaseCmdLineArg.__init__(self, short_arg='d:',
+                                long_arg="regex-dataset=",
+                                help_text="set regex_dataset in config")
+        settings['config_defaults']['regex_dataset'] = settings['regex_dataset_default']
+
+    def process_arg(self, process, value, *args, **kwargs):
+        """
+        Set configuration file name
+        """
+        settings['config_defaults']['regex_dataset'] = value
+
+class RegexDatasetServerCmdLineArg(BaseCmdLineArg):
+    """
+    Process dataset regex server command line setting
+    """
+    def __init__(self):
+        BaseCmdLineArg.__init__(self, short_arg='s:',
+                                long_arg="regex-dataset-server=",
+                                help_text="set regex_dataset server setting in config")
+        settings['config_defaults']['regex_dataset'] = settings['regex_dataset_default']
+
+    def process_arg(self, process, value, *args, **kwargs):
+        """
+        Set configuration file name
+        """
+        settings['config_defaults']['regex_dataset'] = settings['regex_dataset_server_format'].format(value)
+
 class ZsnapdRCmdProcess(Process):
 
     def __init__(self, *args, **kwargs):
@@ -66,6 +98,8 @@ class ZsnapdRCmdProcess(Process):
         """
         super().__init__(usage_message=USAGE_MESSAGE,
             command_description=COMMAND_DESCRIPTION, *args, **kwargs)
+        self.cmdline_arg_list.append(RegexDatasetCmdLineArg())
+        self.cmdline_arg_list.append(RegexDatasetServerCmdLineArg())
         self.cmdline_arg_list.append(TestingCmdLineArg())
 
     def main_process(self):
@@ -81,7 +115,6 @@ class ZsnapdRCmdProcess(Process):
         # Load configuration
         rshell = settings['rshell']
         allowed_cmd_regex_dict = {
-                'rcmd_zfs_get_snapshots': settings['rcmd_zfs_get_snapshots'],
                 'rcmd_zfs_get_snapshots2': settings['rcmd_zfs_get_snapshots2'],
                 'rcmd_zfs_get_datasets': settings['rcmd_zfs_get_datasets'],
                 'rcmd_zfs_snapshot': settings['rcmd_zfs_snapshot'],

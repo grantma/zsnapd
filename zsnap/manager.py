@@ -438,7 +438,7 @@ class Manager(object):
                         continue
                     
                     remote_dataset = replicate_settings['target'] if push else replicate_settings['source']
-                    remote_datasets = ZFS.get_datasets(replicate_settings['endpoint'], log_command=log_command)
+                    remote_datasets = ZFS.get_datasets(replicate_settings['endpoint'], remote_dataset, log_command=log_command)
                     if remote_dataset not in remote_datasets:
                         log_error("[{0}] - remote dataset '{1}' does not exist".format(dataset, remote_dataset))
                         continue
