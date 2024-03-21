@@ -35,6 +35,7 @@ from magcode.core.logging import reconfigure_logging
 from magcode.core.logging import setup_syslog_logging
 from magcode.core.logging import setup_file_logging
 from magcode.core.logging import remove_daemon_stderr_logging
+from magcode.core.process import BaseCmdLineArg
 from magcode.core.process import BooleanCmdLineArg
 from magcode.core.process import Process
 from magcode.core.globals_ import *
