@@ -1,3 +1,10 @@
+zsnapd (0.8.13a-1) unstable; urgency=medium
+
+  * Add missing import to zsnapd_rcmd.py
+  * New upstream release 0.8.13
+
+ -- Matthew Grant <matt@mattgrant.net.nz>  Fri, 22 Mar 2024 09:19:28 +1300
+
 zsnapd (0.8.13-1) unstable; urgency=medium
 
   * Dataset in ALL remote cmds, tighten rcmd filter
