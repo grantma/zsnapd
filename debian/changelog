@@ -1,3 +1,10 @@
+zsnapd (0.8.13b-1) unstable; urgency=medium
+
+  * Slight adjustment to zsnapd-rcmd.conf
+  * New upstream release 0.8.13b
+
+ -- Matthew Grant <matt@mattgrant.net.nz>  Fri, 22 Mar 2024 15:31:29 +1300
+
 zsnapd (0.8.13a-1) unstable; urgency=medium
 
   * Add missing import to zsnapd_rcmd.py
